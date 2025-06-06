@@ -32,7 +32,9 @@
       margin-bottom: 30px;
     }
 
+    .imagenes a,
     .imagenes img {
+      display: block;
       max-width: 100%;
       height: auto;
       border-radius: 10px;
@@ -55,9 +57,11 @@
 
     .confirmacion img {
       max-width: 300px;
+      width: 100%;
       margin-top: 15px;
       cursor: pointer;
       transition: transform 0.3s;
+      border-radius: 10px;
     }
 
     .confirmacion img:hover {
@@ -68,6 +72,25 @@
       color: #555;
       font-size: 0.9rem;
     }
+
+    /* Ajustes para móviles */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .texto {
+        font-size: 1rem;
+      }
+
+      .imagenes {
+        gap: 10px;
+      }
+
+      .confirmacion img {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,11 +100,14 @@
   <section class="imagenes">
     <img src="pantera-rosa-3.gif" alt="Pantera Rosa">
     <img src="beer-42.gif" alt="Cerveza">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWyBew9oV8LXmQ2atOTmmPx4M0iejGqeD09Nez1PvHw-IL_w/viewform?usp=dialog" target="_blank">
+      <img src="gifNaty.webp" alt="Confirmar asistencia">
+    </a>
   </section>
 
   <section class="texto">
     <p>¡Los invitamos a nuestro festejo!</p>
-    <p>Se realizará el día [FECHA] a partir del horario [HORA].</p>
+    <p>Se realizará el día <strong>[FECHA]</strong> a partir del horario <strong>[HORA]</strong>.</p>
   </section>
 
   <section class="confirmacion">
