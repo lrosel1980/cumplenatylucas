@@ -1,74 +1,98 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <meta charset="UTF-8">
+  <title>Cumple de Naty y Lucas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+    header, footer {
+      text-align: center;
+      font-weight: bold;
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    .imagenes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .imagenes img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .texto {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .confirmacion {
+      background-color: #7BA0EB;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .confirmacion img {
+      max-width: 300px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .confirmacion img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+<body>
 
-<body onLoad="MM_preloadImages('BOTONASISTENCIA.png','formularioasistencia.gif')">
-<p>
-  <header style="text-align: left"><strong><em>CUMPLE DE NATY Y LUCAS</em></strong></header>
-</p>
-<div>
-  <table width="1566" border="1">
-    <tbody>
-      <tr>
-        <th width="596" bgcolor="#D6D7DD" scope="col"><img src="pantera-rosa-3.gif" width="390" height="514" alt=""/></th>
-        <th width="954" bgcolor="#D6D7DD" scope="col"><img src="beer-42.gif" width="856" height="514" alt=""/></th>
-      </tr>
-    </tbody>
-  </table>
-  <p>LOS INVITAMOS A NUESTRO FESTEJO A REALIZARSE EL DIA A PARTIR DEL HORARIO </p>
-  <p>&nbsp;</p>
-  <table width="712" border="0" align="left">
-    <tbody>
-      <tr>
-        <th bgcolor="#7BA0EB" scope="col">PARA CONFIRMAR SU  ASISTENCIA LES SOLICITAMOS QUE COMPLETEN EL FORMULARIO</th>
-        <th scope="col"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfWyBew9oV8LXmQ2atOTmmPx4M0iejGqeD09Nez1PvHw-IL_w/viewform?usp=dialog" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('formulario','','formularioasistencia.gif',1)"><img src="formularioasistencia.gif" alt="" width="360" height="270" id="formulario"></a></th>
-      </tr>
-      <tr>
-        <td bgcolor="#7BA0EB">&nbsp;</td>
-        <td>click en la Imagen de la pantera LOCA</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWyBew9oV8LXmQ2atOTmmPx4M0iejGqeD09Nez1PvHw-IL_w/viewform?usp=dialog" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('asistencia','','BOTONASISTENCIA.png',1)"></a></p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-</div>
-<p>
-  <footer style="text-align: center">CIUDAD DE CORDOBA&copy;2025<span style="text-align: center"></span></footer>
-</p>
+  <header>CUMPLE DE NATY Y LUCAS</header>
+
+  <section class="imagenes">
+    <img src="pantera-rosa-3.gif" alt="Pantera Rosa">
+    <img src="beer-42.gif" alt="Cerveza">
+  </section>
+
+  <section class="texto">
+    <p>¡Los invitamos a nuestro festejo!</p>
+    <p>Se realizará el día [FECHA] a partir del horario [HORA].</p>
+  </section>
+
+  <section class="confirmacion">
+    <p><strong>Para confirmar su asistencia, por favor completen el formulario</strong></p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWyBew9oV8LXmQ2atOTmmPx4M0iejGqeD09Nez1PvHw-IL_w/viewform?usp=dialog" target="_blank">
+      <img src="formularioasistencia.gif" alt="Formulario de Asistencia">
+    </a>
+    <p>Click en la imagen de la pantera LOCA</p>
+  </section>
+
+  <footer>CIUDAD DE CÓRDOBA &copy; 2025</footer>
+
 </body>
 </html>
